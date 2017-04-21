@@ -1,0 +1,8 @@
+//Make sure storage folder has permissions
+sudo chmod -R 777 storage
+
+//If error creating laravel project:
+ - phpunit/phpunit 5.7.7 requires ext-dom * -> the requested PHP extension dom is missing from your system.
+//Then:
+sudo apt-get install php-xml
+
