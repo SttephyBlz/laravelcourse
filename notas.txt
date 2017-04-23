@@ -6,3 +6,4 @@ sudo chmod -R 777 storage
 //Then:
 sudo apt-get install php-xml
 
+LARASHOP DATABASE DICTIONARY.
