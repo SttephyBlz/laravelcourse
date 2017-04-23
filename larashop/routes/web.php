@@ -21,7 +21,7 @@ Route::get('/hello/{name}', 'Hello@show');
     return 'Hello World!';
 });*/
 
-/*..............*/
+/*.....GET......*/
 Route::get('/','Front@index');
 Route::get('/products','Front@products');
 Route::get('/products/details/{id}','Front@product_details');
@@ -33,8 +33,11 @@ Route::get('/contact-us','Front@contact_us');
 Route::get('/login','Front@login');
 Route::get('/logout','Front@logout');
 Route::get('/cart','Front@cart');
+Route::get('/cart-remove-item', 'Front@cart_remove_item');
+Route::get('/clear-cart', 'Front@clear_cart');
 Route::get('/checkout','Front@checkout');
 Route::get('/search/{query}','Front@search');
+
 
 /*If*/
 Route::get('blade', function () {
@@ -84,3 +87,6 @@ Route::get('/delete', function() {
         echo $list->id . ' ' . $list->name . ' ';
     }
 });
+
+/*.....POST......*/
+Route::post('/cart', 'Front@cart');
