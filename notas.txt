@@ -7,3 +7,9 @@ sudo chmod -R 777 storage
 sudo apt-get install php-xml
 
 LARASHOP DATABASE DICTIONARY.
+
+ELOQUENT ORM MODELS
+
+
+php artisan make:model <ModelName>
+php artisan db:seed --class=<ClassNameSeeder>
